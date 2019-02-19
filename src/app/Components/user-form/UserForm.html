@@ -1,0 +1,7 @@
+<input [class]="'test'" [placeholder]="placeholder" [(ngModel)]="name">
+<h3 [style.color]="name.length % 2 === 0 ? 'red' : 'blue'">Your name is : {{name}}</h3>
+
+<div [ngSwitch]="isMetric">
+  <div *ngSwitchCase="false">Degree Celsius</div>
+  <div *ngSwitchDefault>Fahrenheit</div>
+</div>
